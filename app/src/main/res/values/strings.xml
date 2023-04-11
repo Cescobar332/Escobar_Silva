@@ -19,4 +19,8 @@
     <string name="correo_electr_nico">Correo Electrónico</string>
     <string name="login">LOGIN</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="nombre_editext">Nombre</string>
+    <string name="precio_editext">Precio</string>
+    <string name="url_imagen_editext">URL imagen</string>
+    <string name="registrar_producto_btn">Registrar Producto</string>
 </resources>
