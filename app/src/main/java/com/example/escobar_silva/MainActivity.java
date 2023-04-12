@@ -5,7 +5,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -59,5 +61,18 @@ public class MainActivity extends AppCompatActivity {
         listaPrincipalProductos.add(producto1);
         listaPrincipalProductos.add(producto2);
         listaPrincipalProductos.add(producto3);
+    }
+    public void AgregarProducto(View view){
+        Intent miIntent = new Intent(this, FormularioActivity.class);
+        startActivity(miIntent);
+    }
+    public void CerrarSesion(View view){
+        SharedPreferences misPreferencias = getSharedPreferences("tienda_app", MODE_PRIVATE);
+        SharedPreferences.Editor miEditor = misPreferencias.edit();
+        miEditor.clear();
+        miEditor.apply();
+
+        startActivity(new Intent(this, LoginActivity.class));
+        finish();
     }
 }
