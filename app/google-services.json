@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "916222735986",
+    "project_id": "escobarsilva-f8727",
+    "storage_bucket": "escobarsilva-f8727.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:916222735986:android:893d0f0e0373650a6734eb",
+        "android_client_info": {
+          "package_name": "com.example.escobar_silva"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "916222735986-7vh21u8m3avhg4nb53qtumimck2jvu4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6S_yrj3cZ-5lBhudTeeBS6R3U78eUkhw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "916222735986-7vh21u8m3avhg4nb53qtumimck2jvu4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

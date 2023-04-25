@@ -8,7 +8,7 @@
     tools:context=".FormularioActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/et_nombre_formulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="18dp"
@@ -19,12 +19,12 @@
         android:padding="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/et_precio_formulario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/et_precio_formulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
@@ -36,11 +36,11 @@
         android:padding="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
-        app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintBottom_toTopOf="@+id/et_imagen_formulario"
+        app:layout_constraintEnd_toEndOf="@+id/et_imagen_formulario" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/et_imagen_formulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="85dp"
@@ -51,19 +51,20 @@
         android:padding="10dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_agregar_formulario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_agregar_formulario"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/shape_button"
+        android:onClick="clickGuardar"
         android:text="@string/registrar_producto_btn"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/shape_button"
-        android:textColor="@color/color_unab"/>
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
