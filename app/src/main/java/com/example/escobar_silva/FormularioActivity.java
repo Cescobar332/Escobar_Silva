@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class FormularioActivity extends AppCompatActivity {
     private EditText etNombre, etPrecio, etImagen;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,7 +22,8 @@ public class FormularioActivity extends AppCompatActivity {
         etImagen = findViewById(R.id.et_imagen_formulario);
 
     }
-    public void clickGuardar(View view){
+
+    public void clickGuardar(View view) {
         String nombre = etNombre.getText().toString();
         Double precio = Double.parseDouble(etPrecio.getText().toString());
         String url = etImagen.getText().toString();
@@ -30,6 +33,11 @@ public class FormularioActivity extends AppCompatActivity {
         nuevoProducto.setPrecio(precio);
         nuevoProducto.setUrl(url);
 
-        FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+       FirebaseFirestore firestore = FirebaseFirestore.getInstance();
+        firestore.collection("productos").add(nuevoProducto);
+
+        Toast.makeText(this, "Se creó el producto", Toast.LENGTH_SHORT).show();
+        finish();
+
     }
 }

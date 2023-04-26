@@ -1,47 +1,56 @@
 package com.example.escobar_silva;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
+import com.google.firebase.firestore.Exclude;
+import com.google.firebase.firestore.PropertyName;
 
 import java.io.Serializable;
 
 public class Producto implements Serializable {
 
-    public String Nombre;
-    public Double Precio;
-    public String Url;
+
+    private String id;
+    public String nombre;
+    public Double precio;
+    public String url;
     public Producto(String nombre, Double precio, String url) {
-        this.Nombre = nombre;
-        this.Precio = precio;
-        this.Url = url;
+        this.nombre = nombre;
+        this.precio = precio;
+        this.url = url;
     }
     public Producto(){
 
     }
+    @Exclude
+    public String getId() {
+        return id;
+    }
+    @Exclude
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String nombre) {
-        Nombre = nombre;
+        this.nombre = nombre;
     }
 
     public Double getPrecio() {
-        return Precio;
+        return precio;
     }
 
     public void setPrecio(Double precio) {
-        Precio = precio;
+        this.precio = precio;
     }
-
+    @PropertyName("url_image")
     public String getUrl() {
-        return Url;
+        return url;
     }
-
+    @PropertyName("url_image")
     public void setUrl(String url) {
-        Url = url;
+        this.url = url;
     }
 
 }

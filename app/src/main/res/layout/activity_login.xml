@@ -80,7 +80,7 @@
             android:background="@drawable/shape_button"
             android:onClick="clickIniciarSesion"
             android:text="@string/iniciar_sesi_n"
-            android:textColor="@color/color_unab"
+            android:textColor="@color/white"
             android:textSize="20dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
