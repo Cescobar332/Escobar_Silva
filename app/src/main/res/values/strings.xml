@@ -24,4 +24,5 @@
     <string name="url_imagen_editext">URL imagen</string>
     <string name="registrar_producto_btn">Registrar Producto</string>
     <string name="inicio">Inicio</string>
+    <string name="editar">Editar</string>
 </resources>
